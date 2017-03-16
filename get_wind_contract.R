@@ -8,7 +8,7 @@ rm(list=ls(all=TRUE))
 options(width = 438L)
 
 #ExUL, INDEX
-source("//VMWARE-HOST/Shared Folders/Documents/workspace/r-basis-analysis/ExUL.R", echo=FALSE, encoding="GBK")
+source(paste(c(head(unlist(strsplit(getwd(),"/")),-1), "r-basis-analysis", "ExUL.R"), collapse="/"), echo=FALSE, encoding="GBK")
 #wind terminal specific code
 library(WindR)
 w.start()
